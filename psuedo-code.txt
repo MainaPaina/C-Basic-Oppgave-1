@@ -1,0 +1,26 @@
+PROCESS APP
+    PRINT "Please enter temperature"
+    INPUT temperature
+    IF temperature is number
+        PRINT "You entered {temperature}"
+        IF temperature less than condition 1
+            PRINT "Some text for condition 1"
+        ELSE IF temperature less than condition 2
+            PRINT "Some text for condition 2"
+        ...
+        ELSE IF temperature more or equal to condition X
+            PRINT "Some text for condition X"
+
+        SWITCH temperature
+            CASE less than condition 1
+                PRINT "Some text for condition 1"
+            CASE less than condition 2
+                PRINT "Some text for condition 2"
+            CASE 
+                ...
+            CASE more or equal to condition X
+                PRINT "Some text for condition X" 
+            
+    ELSE
+        PRINT "Input is not valid"
+END PROCESS
